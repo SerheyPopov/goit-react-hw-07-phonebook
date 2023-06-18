@@ -12,9 +12,9 @@ export const Item = styled.li`
   }
 `;
 export const Loader = styled.div`
-width:50px;
-margin-left:auto;
-margin-right: auto;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const Button = styled.button`
@@ -22,6 +22,15 @@ export const Button = styled.button`
   border: none;
   cursor: pointer;
   margin-left: 20px;
+  border-radius: 50%;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.2);
+  :hover {
+    background-color: #e8e6e6;
+  }
+  &:active {
+    box-shadow: none;
+  }
 `;
 export const Name = styled.p`
   font-size: large;
